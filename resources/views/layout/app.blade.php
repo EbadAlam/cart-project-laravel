@@ -31,7 +31,10 @@
         @yield('content')
         <footer class="main-footer">
             <div class="container main-footer-container">
-                <h3 class="band-name">The Generics</h3>
+                {{-- <h3 class="band-name">The Generics</h3> --}}
+                <div class="footer-logo">
+                <img src="{{ asset('frontend/Images/logo-white.png') }}">
+                </div>
                 <ul class="nav footer-nav" style="display: flex;padding-left:53%;">
                     <li>
                         <a href="https://www.youtube.com" target="_blank">

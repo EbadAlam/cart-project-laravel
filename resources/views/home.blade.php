@@ -2,7 +2,6 @@
 @section('content')
         <section class="container content-section">
             <div class="shop-items">
-                {{-- Loop start from here --}}
                 @if (count($item) > 0)
                 @foreach ($item as $key => $singleItem)
                 <div class="shop-item">
@@ -17,7 +16,6 @@
                 @else
                 <h2>No records!</h2>
                 @endif
-                {{-- Loop end here --}}
             </div>
         </section>
         <section class="container content-section">
