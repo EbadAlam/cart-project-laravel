@@ -1,3 +1,12 @@
+window.onload = () => {
+  'use strict';
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('./sw.js');
+  }
+}
+
 //Define Dom Variables
 const shopItemButtons = document.getElementsByClassName("shop-item-button");
 const purchaseBtn = document.getElementsByClassName("btn-purchase")[0];

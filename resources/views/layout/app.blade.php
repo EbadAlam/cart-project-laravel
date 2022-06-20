@@ -3,6 +3,8 @@
     <head>
         <title>The Generics | Store</title>
         <meta name="description" content="This is the description">
+        <link rel="manifest" href="/manifest.json">
+        {{-- <link rel="manifest" href="{{ asset('manifest.json') }}"> --}}
         <link rel="stylesheet" href="{{ asset('frontend/styles.css') }}" />
         <link rel="stylesheet" href="{{ asset('frontend/bootstrap.css') }}" />
         <link rel="stylesheet" href="{{ asset('frontend/bootstrap.min.css') }}" />
