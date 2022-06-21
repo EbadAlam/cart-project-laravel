@@ -136,11 +136,8 @@
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <form action="{{ route('logout') }}" method="POST">
-                                @csrf
-                                <button style="border: none;display: block;text-align: center;margin-left: 10px;
-}" class="btn btn-default"><i class="fa fa-fw fa-power-off"></i> Logout</button>
-                            </form>
+                          <a href="{{ route('logout')}}" class="btn btn-default"><i class="fa fa-fw fa-power-off"></i> Logout</a>
+                            
                         </li>
                     </ul>
                 </li>
