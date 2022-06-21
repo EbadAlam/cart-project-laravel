@@ -20,7 +20,7 @@
                     <li><a href="{{ route('home') }}">HOME</a></li>
                     <li><a href="{{ route('home') }}">STORE</a></li>
                     <li><a href="{{ route('home') }}">ABOUT</a></li>
-                    <li><a href="{{ route('register') }}">REGISTER</a></li>
+                    {{-- <li><a href="{{ route('register') }}">REGISTER</a></li> --}}
                     @if (Auth::check())
                     <li><a href="{{ route('logout') }}">LOGOUT</a></li>
                     <li><a href="{{ route('dashboard') }}">ADMIN</a></li>
