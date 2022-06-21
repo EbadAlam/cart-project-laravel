@@ -22,6 +22,8 @@ Route::get('/',[FrontendController::class,'index'])->name('home');
 Route::get('/login',[FrontendController::class,'login'])->name('login');
 Route::post('/login',[FrontendController::class,'login_post'])->name('login_post');
 Route::get('/logout',[FrontendController::class,'logout'])->name('logout');
+Route::get('/register',[FrontendController::class,'register'])->name('register');
+Route::post('/register',[FrontendController::class,'register_post'])->name('register_post');
 
 Route::group(['prefix' => 'admin','middleware' => ['AuthCheck']], function() {
 	Route::get('/dashboard',[AdminController::class,'index'])->name('dashboard');

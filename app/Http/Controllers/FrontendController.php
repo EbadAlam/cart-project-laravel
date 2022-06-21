@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Item;
+use App\Models\User;
 use Auth;
+use Hash;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -36,6 +38,26 @@ class FrontendController extends Controller
     public function logout()
     {
         Auth::logout();
+        return redirect()->route('home');
+    }
+    public function register()
+    {
+        return view('register');
+    }
+    public function register_post(Request $request)
+    {
+        // dd($request->all());
+        $request->validate([
+            'username' => 'required',
+            'password' => 'required',
+            'email' => 'required|email',
+        ]);
+        User::create([
+          "username" => $request->username,
+          "email" => $request->email,
+          "password" => Hash::make($request->password),
+        ]);
+
         return redirect()->route('home');
     }
 }
