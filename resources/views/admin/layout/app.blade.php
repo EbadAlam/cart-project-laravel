@@ -136,7 +136,8 @@
                         </li>
                         <li class="divider"></li>
                         <li>
-                          <a href="{{ route('logout')}}" class="btn btn-default"><i class="fa fa-fw fa-power-off"></i> Logout</a>
+                          <a href="{{ route('logout')}}" style="border: none;display: block;text-align: center;margin-left: 10px;
+}" class="btn btn-default"><i class="fa fa-fw fa-power-off"></i> Logout</a>
                             
                         </li>
                     </ul>
